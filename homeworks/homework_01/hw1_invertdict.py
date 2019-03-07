@@ -11,6 +11,12 @@ def expand(y, l):
 
 
 def invert_dict(source_dict):
+    '''
+    Функция которая разворачивает словарь, т.е.
+    каждому значению ставит в соответствие ключ.
+    :param source_dict: dict
+    :return: new_dict: dict
+    '''
     if not isinstance(source_dict, dict):
         return None
     else:
