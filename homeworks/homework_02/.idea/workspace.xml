@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e33227-bf8b-45a4-8428-902a0b34d978" name="Default Changelist" comment="Merge remote-tracking branch 'upstream/master'&#10;&#10;# Conflicts:&#10;#&#9;lectures/lecture_01/notebooks/Lecture_01.ipynb">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/description_table.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fastmerger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/posts-cp1251.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/posts-cp1251.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/posts-utf8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/posts-utf8.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vkposter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/lection_2_mephi_part_1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/test_hw_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_fastmerger.ini.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_vk_poster.ini.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lectures/lecture_01/notebooks/Lecture_01.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../lectures/lecture_01/notebooks/Lecture_01.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tests/test_hw_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../tests/test_hw_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tests/tests_data/pkl.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../tests/tests_data/pkl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="-553">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -54,9 +42,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="1024" />
+    <option name="x" value="993" />
     <option name="y" value="27" />
-    <option name="width" value="896" />
+    <option name="width" value="927" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -81,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pkl">
+  <component name="RunManager" selected="Python.table">
     <configuration name="p" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="homework_02" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,8 +112,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="table" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="homework_02" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/table.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.table" />
         <item itemvalue="Python.pkl" />
         <item itemvalue="Python.p" />
       </list>
@@ -154,7 +164,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1024" y="27" width="896" height="1053" extended-state="4" />
+    <frame x="993" y="27" width="927" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.5033186" />
@@ -162,7 +172,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -238,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="-553">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
