@@ -47,7 +47,6 @@ def tsv_check(file, e):
     return True
 
 
-
 def check_int(x):
     try:
         a = int(x)
