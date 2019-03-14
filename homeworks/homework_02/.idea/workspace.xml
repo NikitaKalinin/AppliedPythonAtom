@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e33227-bf8b-45a4-8428-902a0b34d978" name="Default Changelist" comment="Merge remote-tracking branch 'upstream/master'&#10;&#10;# Conflicts:&#10;#&#9;lectures/lecture_01/notebooks/Lecture_01.ipynb">
-      <change afterPath="$PROJECT_DIR$/../homework_03/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_hashmap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_hashset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_lrucache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/test_dir/filename" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../homework_03/test_dir/filename.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/file2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/lection_2_mephi_part_1.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/lecture_02.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/module_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/module_private.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_03/notebooks/lecture_03.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_03/notebooks/lecture_03_2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/test_hw_02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/test_hw_03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_fastmerger.ini.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_vk_poster.ini.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vkposter.py" beforeDir="false" afterPath="$PROJECT_DIR$/vkposter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="345">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -51,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vkposter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="195">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding>
                 <element signature="e#40#86#0" expanded="true" />
               </folding>
@@ -83,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="346" />
     <option name="y" value="112" />
     <option name="width" value="917" />
@@ -93,13 +70,36 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="homework_02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework_02" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="homework_02" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/table.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,10 +208,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="346" y="112" width="917" height="789" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5033186" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5032787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,8 +274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vkposter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="195">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
             <element signature="e#40#86#0" expanded="true" />
           </folding>
@@ -285,8 +284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="345">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
