@@ -1,10 +1,11 @@
-
 import json
 
 # Ваши импорты
 from to_table import to_table_json, to_table_tsv
 from checks import json_check, tsv_check, encoding_check, file_valid_check
 
+
+# Ваш код
 if __name__ == '__main__':
     to_out = ""
     f = file_valid_check()
@@ -27,5 +28,4 @@ if __name__ == '__main__':
         print('Файл не валиден')
 else:
     print('Файл не валиден')
-# Ваш код
 
