@@ -12,6 +12,7 @@ class VKPoster:
         self.user_post = {}
         self.user_subs = {}
         self.post_watched = {}
+        raise NotImplementedError
 
     def user_posted_post(self, user_id: int, post_id: int):
         '''
@@ -104,4 +105,3 @@ class VKPoster:
         if len(result) >= k:
             return result[:k]
         pass
-

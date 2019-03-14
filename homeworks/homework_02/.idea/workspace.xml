@@ -2,6 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e33227-bf8b-45a4-8428-902a0b34d978" name="Default Changelist" comment="Merge remote-tracking branch 'upstream/master'&#10;&#10;# Conflicts:&#10;#&#9;lectures/lecture_01/notebooks/Lecture_01.ipynb">
+      <change afterPath="$PROJECT_DIR$/../homework_03/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_hashmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_hashset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_lrucache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/hw3_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/test_dir/filename" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework_03/test_dir/filename.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/file2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/lection_2_mephi_part_1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/lecture_02.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/module_all.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_02/notebooks/scripts/module_private.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_03/notebooks/lecture_03.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lectures/lecture_03/notebooks/lecture_03_2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tests/test_hw_02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tests/test_hw_03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_fastmerger.ini.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tests/tests_data/test_hw_02_vk_poster.ini.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/table.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vkposter.py" beforeDir="false" afterPath="$PROJECT_DIR$/vkposter.py" afterDir="false" />
     </list>
@@ -14,10 +37,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/table.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vkposter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#40#86#0" expanded="true" />
               </folding>
@@ -43,16 +78,16 @@
         <option value="$USER_HOME$/p.py" />
         <option value="$PROJECT_DIR$/checks.py" />
         <option value="$PROJECT_DIR$/to_table.py" />
-        <option value="$PROJECT_DIR$/table.py" />
         <option value="$PROJECT_DIR$/vkposter.py" />
+        <option value="$PROJECT_DIR$/table.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="927" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="346" />
+    <option name="y" value="112" />
+    <option name="width" value="917" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,7 +208,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="927" height="1055" extended-state="4" />
+    <frame x="346" y="112" width="917" height="789" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.5033186" />
@@ -194,17 +229,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/vkposter.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/__init__.py">
@@ -249,22 +273,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/table.py">
+    <entry file="file://$PROJECT_DIR$/vkposter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
+            <element signature="e#40#86#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vkposter.py">
+    <entry file="file://$PROJECT_DIR$/table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="315">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
-            <element signature="e#40#86#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
