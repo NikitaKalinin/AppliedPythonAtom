@@ -24,23 +24,28 @@ def file_valid_check():
 
 
 def json_check(file, e):
-    try:
-        json.loads(open(file, encoding=e).read())
-        return True
-    except json.JSONDecodeError:
-        return False
+    with open(file, encoding=e) as file_c:
+        try:
+            list_of_key = []
+            checker = json.load(file_c)
+            list_of_key.append(list(checker[0].keys()))
+            for key in checker:
+                if list(key.keys()) != list_of_key[0] or list(key.keys()) == []:
+                    return False
+                list_of_key.append(list(key.values()))
+            return True
+        except (json.JSONDecodeError, KeyError, IndexError):
+            return False
 
 
 def tsv_check(file, e):
-    try:
-        data = csv.reader(open(file, encoding=e), delimiter='\t')
-        check_list = []
-        for i in list(data):
-            check_list.append(len(i))
-        if check_list.count(check_list[0]) == len(check_list):
-            return True
-    except:
-        return False
+    with open(file, encoding=e) as file_c:
+        data_list = csv.reader(file_c, delimiter='\t')
+        for key in data_list:
+            if len(key) == 0:
+                return False
+    return True
+
 
 
 def check_int(x):
