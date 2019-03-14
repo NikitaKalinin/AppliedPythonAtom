@@ -12,6 +12,7 @@ class VKPoster:
         self.user_post = {}
         self.user_subs = {}
         self.post_watched = {}
+        raise NotImplementedError
 
     def user_posted_post(self, user_id: int, post_id: int):
         '''
@@ -25,6 +26,7 @@ class VKPoster:
             self.user_post[user_id].insert(0, post_id)
         else:
             self.user_post[user_id] = [post_id]
+        pass
 
     def user_read_post(self, user_id: int, post_id: int):
         '''
@@ -39,6 +41,7 @@ class VKPoster:
                 self.post_watched[post_id].append(user_id)
         else:
             self.post_watched[post_id] = [user_id]
+        pass
 
     def user_follow_for(self, follower_user_id: int, followee_user_id: int):
         '''
@@ -53,6 +56,7 @@ class VKPoster:
                 self.user_subs[follower_user_id].append(followee_user_id)
         else:
             self.user_subs[follower_user_id] = [followee_user_id]
+        pass
 
     def get_recent_posts(self, user_id: int, k: int)-> list:
         '''
@@ -74,6 +78,7 @@ class VKPoster:
                         posts.remove(post)
             posts.sort(reverse=True)
         return posts[:k]
+        pass
 
     def get_most_popular_posts(self, k: int) -> list:
         '''
@@ -99,3 +104,5 @@ class VKPoster:
             result = result + out[key]
         if len(result) >= k:
             return result[:k]
+        pass
+
