@@ -88,7 +88,8 @@ def to_table_json(data, out):
     out.append("-"*(sum+1))
     title = "|"
     for key in len_of:
-        title = title + " "*((len_of[key]-len(key)-1)//2) + key + " "*((len_of[key]-len(key)-1)//2)+'|'
+        k = " "*((len_of[key]-len(key)-1)//2)
+        title = title + k + key + k + '|'
     out.append(title)
     print_tabs(s, len_of, out)
     out.append("-"*(sum+1))
@@ -121,7 +122,8 @@ def to_table_tsv(file, e, out):
         tab = "|"
         if c == 0:
             for i in range(len(row)):
-                tab = tab + " "*((len_of[i]-len(row[i])-1)//2) + row[i] + " "*((len_of[i]-len(row[i])-1)//2)+'|'
+                k = " "*((len_of[i]-len(row[i])-1)//2)
+                tab = tab + k + row[i] + k + '|'
             c = 1
         else:
             for i in range(len(row)):
