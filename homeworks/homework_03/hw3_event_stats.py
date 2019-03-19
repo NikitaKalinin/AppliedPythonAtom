@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import collections
+
 
 class TEventStats:
     FIVE_MIN = 300
 
     def __init__(self):
         # TODO: реализовать метод
-        raise NotImplementedError
+        self.users_activity = {}
 
     def register_event(self, user_id, time):
         """
@@ -17,7 +19,10 @@ class TEventStats:
         :return: None
         """
         # TODO: реализовать метод
-        raise NotImplementedError
+        if user_id not in self.users_activity:
+            self.users_activity[user_id] = [time]
+        else:
+            self.users_activity[user_id].append(time)
 
     def query(self, count, time):
         """
@@ -29,4 +34,12 @@ class TEventStats:
         :return: activity_count: int
         """
         # TODO: реализовать метод
-        raise NotImplementedError
+        out = 0
+        for user in self.users_activity:
+            c = 0
+            for active in self.users_activity[user]:
+                if (time - 300) < active < time:
+                    c += 1
+            if c == count and self.users_activity[user][0] < time:
+                out += 1
+        return out
