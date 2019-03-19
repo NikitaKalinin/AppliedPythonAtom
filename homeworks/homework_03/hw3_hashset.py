@@ -32,7 +32,7 @@ class HashSet(HashMap):
         # TODO метод, возвращающий новый HashSet
         #  элементы - пересечение текущего и другого
         out = HashSet()
-        for key in itertools.chain(self.keys(),another_hashset.keys()):
+        for key in itertools.chain(self.keys(), another_hashset.keys()):
             if key in self.keys() and key in another_hashset.keys():
                 out.put(key)
         return out
