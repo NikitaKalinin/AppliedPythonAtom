@@ -29,12 +29,15 @@ class LRUCacheDecorator:
         def out(*args):
             clearing()
             if args in self.cache:
-                return self.cache[args]
+                result = self.cache[args]
+                del self.cache[args]
+                self.cache[args] = result
+                return result
             if self.maxsize:
                 if len(self.cache) < self.maxsize:
                     self.cache[args] = func(*args)
                 else:
-                    self.cache.popitem()
+                    self.cache.popitem(last=False)
                     self.cache[args] = func(*args)
             else:
                 self.cache[args] = func(*args)

@@ -38,7 +38,7 @@ class TEventStats:
         for user in self.users_activity:
             c = 0
             for active in self.users_activity[user]:
-                if (time - 300) < active < time:
+                if (time - 300) < active <= time:
                     c += 1
             if c == count and self.users_activity[user][0] < time:
                 out += 1

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import os
+
 
 class Requester:
     '''
@@ -8,10 +10,16 @@ class Requester:
      к удаленному серверу
     '''
     def get(self, host, port, filename):
-        return "Fail"
+        with open(host+self.filename+'.tmp') as f:
+            data = f.read()
+            f.close()
+        return data
 
     def post(self, host, port, filename, data):
-        return False
+        with open(port+self.filename+'.tmp', 'w') as file:
+            for line in data:
+                file.write(line)
+            file.close()
 
 
 class RemoteFileReader(Requester):
@@ -37,10 +45,12 @@ class OrdinaryFileWorker(RemoteFileReader):
     def transfer_to_remote(self, filename):
         with open(filename, "r") as f:
             super().write_file(filename, f.readlines())
+            f.close()
 
     def transfer_to_local(self, filename):
         with open(filename, "w") as f:
             f.write(super().read_file(filename))
+            f.close()
 
 
 class MockOrdinaryFileWorker(OrdinaryFileWorker):
@@ -58,7 +68,25 @@ class MockOrdinaryFileWorker(OrdinaryFileWorker):
      если еще не создана
     '''
     def __init__(self):
-        raise NotImplementedError
+        super().__init__('homeworks/homework_03/test_dir/', './tmpf/')
+        self.filename = ''
+        if not os.path.exists(self._port):
+            os.mkdir(self._port)
+
+    def transfer_to_remote(self, filename):
+        self.filename = filename
+        super().transfer_to_remote(self._host+filename)
+
+    def transfer_to_local(self, filename):
+        self.filename = filename
+        super().transfer_to_local(self._port + filename)
+
+    def __del__(self):
+        if os.path.isdir(self._port):
+            for file in os.listdir(self._port):
+                if os.path.isfile(self._port + file):
+                    os.remove(self._port + file)
+            os.rmdir(self._port)
 
 
 class LLNode:
