@@ -81,8 +81,7 @@ class CSRMatrix:
         Return dense representation of matrix (2D np.array).
         """
         out = np.zeros((len(self.ia)-1, self.columns))
-        c = 0
-        for row in range(len(self.ia) -1):
+        for row in range(len(self.ia) - 1):
             for col in range(self.columns):
                 out[row, col] = self.get_item(row, col)
         return out
