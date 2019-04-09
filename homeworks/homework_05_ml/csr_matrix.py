@@ -15,8 +15,8 @@ class CSRMatrix:
         :param init_matrix_representation: can be usual dense matrix
         or
         (row_ind, col, data) tuple with np.arrays,
-            where data, row_ind and col_ind satisfy the relationship:
-            a[row_ind[k], col_ind[k]] = data[k]
+        where data, row_ind and col_ind satisfy the relationship:
+        a[row_ind[k], col_ind[k]] = data[k]
         """
         init = init_matrix_representation
         if isinstance(init_matrix_representation, tuple) and len(init_matrix_representation) == 3:
