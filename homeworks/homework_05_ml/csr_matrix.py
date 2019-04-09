@@ -21,14 +21,25 @@ class CSRMatrix:
         init = init_matrix_representation
         if isinstance(init_matrix_representation, tuple) and len(init_matrix_representation) == 3:
             init = list(init)
-            matrix = np.zeros((max(init[0]) + 1, max(init[1]) + 1))
-            for i in range(len(init[2])):
-                matrix[init[0][i], init[1][i]] = init[2][i]
-            to_csr = CSRMatrix(matrix)
-            self.ia = to_csr.ia
-            self.a = to_csr.a
-            self.ja = to_csr.ja
-            self.columns = matrix.shape[1]
+            self.ia = (max(init[0]) + 2) * [0]
+            self.columns = max(init[1]) + 1
+            zero_ind = list(np.where(np.array(init[2]) == 0)[0])
+            for i in range(3):
+                init[i] = np.delete(np.array(init[i]), zero_ind)
+            sort_by_row = np.argsort(init[0])
+            for i in range(3):
+                init[i] = np.array([init[i][k] for k in sort_by_row])
+            start = 0
+            for i in range(len(self.ia) - 1):
+                stop = list(init[0]).count(i)
+                self.ia[i + 1] = self.ia[i] + stop
+                sort_by_col = np.argsort(init[0][start:start + stop])
+                init[1][start:start + stop] = np.array([init[1][start:start + stop][k] for k in sort_by_col])
+                init[2][start:start + stop] = np.array([init[2][start:start + stop][k] for k in sort_by_col])
+                start += stop
+            self.a = init[2]
+            self.ja = init[1]
+            self.ia = np.array(self.ia)
         elif isinstance(init_matrix_representation, np.ndarray):
             self.a = init[init != 0]
             self.ja = np.nonzero(init)[1]
@@ -44,7 +55,7 @@ class CSRMatrix:
         Return value in i-th row and j-th column.
         Be careful, i and j may have invalid values (-1 / bigger that matrix size / etc.).
         """
-        if (len(self.ia) - 1) >= i >= 0 and self.columns >= j >= 0:
+        if (len(self.ia) - 1) > i >= 0 and self.columns > j >= 0:
             c = self.ia[i]
             while c < self.ia[i+1]:
                 if self.ja[c] == j:
@@ -57,19 +68,22 @@ class CSRMatrix:
         Set the value to i-th row and j-th column.
         Be careful, i and j may have invalid values (-1 / bigger that matrix size / etc.).
         """
-        matrix = self.to_dense()
-        matrix[i, j] = value
-        new_m = CSRMatrix(matrix)
-        self.ia = new_m.ia
-        self.a = new_m.a
-        self.ja = new_m.ja
+        if (len(self.ia) - 1) > i >= 0 and self.columns > j >= 0:
+            matrix = self.to_dense()
+            matrix[i, j] = value
+            new_m = CSRMatrix(matrix)
+            self.ia = new_m.ia
+            self.a = new_m.a
+            self.ja = new_m.ja
 
     def to_dense(self):
         """
         Return dense representation of matrix (2D np.array).
         """
         out = np.zeros((len(self.ia)-1, self.columns))
-        for row in range(len(self.ia) - 1):
-            for col in range(self.columns):
-                out[row, col] = self.get_item(row, col)
+        start = 0
+        for i in range(1, len(self.ia)):
+            while start < self.ia[i]:
+                out[i - 1, self.ja[start]] = self.a[start]
+                start += 1
         return out
