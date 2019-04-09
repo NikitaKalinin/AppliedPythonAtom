@@ -21,26 +21,14 @@ class CSRMatrix:
         init = init_matrix_representation
         if isinstance(init_matrix_representation, tuple) and len(init_matrix_representation) == 3:
             init = list(init)
-            self.ia = (max(init[1])+2)*[0]
-            self.columns = max(init[1])
-            zero_ind = list(np.where(np.array(init[2]) == 0)[0])
-            for i in range(3):
-                init[i] = np.delete(np.array(init[i]), zero_ind)
-            sort_by_row = np.argsort(init[1])
-            for i in range(3):
-                init[i] = np.array([init[i][k] for k in sort_by_row])
-            start = 0
-            for i in range(len(self.ia)-1):
-                stop = list(init[1]).count(i)
-                self.ia[i+1] = self.ia[i] + stop
-                sort_by_col = np.argsort(init[0][start:stop])
-                init[0][start:stop] = np.array([init[0][start:stop][k] for k in sort_by_col])
-                init[2][start:stop] = np.array([init[2][start:stop][k] for k in sort_by_col])
-                start += stop
-            self.a = init[2]
-            self.ja = init[0]
-            self.ia = np.array(self.ia)
-
+            matrix = np.zeros((max(init[0]) + 1, max(init[1]) + 1))
+            for i in range(len(init[2])):
+                matrix[init[0][i], init[1][i]] = init[2][i]
+            to_csr = CSRMatrix(matrix)
+            self.ia = to_csr.ia
+            self.a = to_csr.a
+            self.ja = to_csr.ja
+            self.columns = matrix.shape[1]
         elif isinstance(init_matrix_representation, np.ndarray):
             self.a = init[init != 0]
             self.ja = np.nonzero(init)[1]
