@@ -6,8 +6,10 @@ import numpy as np
 from sklearn.preprocessing import LabelBinarizer, StandardScaler
 import math
 
+
 class LogisticRegression:
-    def __init__(self, lambda_coef=1.0, regulatization=None, alpha=0.5, n_iter = 1000):
+
+    def __init__(self, lambda_coef=1.0, regulatization=None, alpha=0.5, n_iter=1000):
         """
         LogReg for Binary case
         :param lambda_coef: constant coef for gradient descent step
